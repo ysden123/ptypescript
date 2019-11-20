@@ -10,6 +10,9 @@
 	"license": "MIT",
 	"scripts": {
 		"start": "node dist/app.js",
-		"build-ts": "tsc"
+		"build": "tsc"
+	},
+	"dependencies": {
+		"@types/node": "^12.12.11"
 	}
 }

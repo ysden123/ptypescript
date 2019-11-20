@@ -1,6 +1,10 @@
 
-simpleapp/.idea/
+**/.idea/
+
+**/node_modules/
 
 simpleapp/dist/
 
 *.iml
+
+simpleapp/package-lock.json

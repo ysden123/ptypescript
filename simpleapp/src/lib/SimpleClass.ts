@@ -3,14 +3,18 @@
  */
 
 export default class SimpleClass {
-    constructor() {
+    arg: string;
 
+    constructor(arg: string) {
+        this.arg = arg
     }
 
     run(): void {
-        console.log((new Date()) +  " ==>SimpleClass::run");
-        setTimeout(()=>{
-            console.log((new Date()) +  " <==SimpleClass::run");
+        let start = new Date();
+        console.log(`${start} ==> SimpleClass::run`);
+        setTimeout(() => {
+            let now = new Date();
+            console.log(`${now} <==SimpleClass::run. arg is ${this.arg}`);
         }, 500)
     }
 }
