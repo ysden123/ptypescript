@@ -22,11 +22,32 @@ npm start
 ==== Build docker
 Run command:
 ----
-docker build --rm -t ysden123/simpelapp .
+docker build --rm -t ysden123/simplelapp .
 ----
 
 ==== Run docker
 Run command:
 ----
-docker run --rm -i ysden123/simpelapp
+docker run --rm -i ysden123/simplelapp
+----
+
+== Deploy Docker image
+
+1 - Build docker image (see Build docker).
+
+2  - Save image:
+----
+docker save --output ysden123-simpleapp.tar ysden123/simplelapp
+----
+
+3 - Copy ysden123-simpleapp.tar to destination machine.
+
+Load image on destination machine:
+----
+docker load -i ysden123-simpleapp.tar
+----
+
+4 - Run docker:
+----
+docker run --rm -i ysden123/simplelapp
 ----
