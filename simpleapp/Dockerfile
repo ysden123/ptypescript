@@ -1,10 +1,8 @@
 FROM node:10-alpine
+RUN npm install -g typescript
 ENV APPLICATION_HOME /usr/apps/simpleapp
-
-RUN npm run build
-
-COPY dist $APPLICATION_HOME/
-
+COPY . $APPLICATION_HOME/
 WORKDIR $APPLICATION_HOME
+RUN npm run build
 ENTRYPOINT ["sh", "-c"]
-CMD ["exec node app.js"]
+CMD ["exec npm start"]
