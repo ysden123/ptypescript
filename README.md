@@ -1,0 +1,2 @@
+# ptypescript
+Playing with TypeScript
