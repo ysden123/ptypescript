@@ -1,0 +1,32 @@
+= simpleapp
+
+Playing with TypeScript
+
+== Build
+
+=== Without docker
+
+==== Compile
+Run command:
+----
+npm run build
+----
+
+==== Run
+Run command:
+----
+npm start
+----
+
+=== With docker
+==== Build docker
+Run command:
+----
+docker build --rm -t ysden123/simpelapp .
+----
+
+==== Run docker
+Run command:
+----
+docker run --rm -i ysden123/simpelapp
+----
