@@ -1,0 +1,15 @@
+{
+	"name": "simple-starter",
+	"version": "1.0.0",
+	"description": "A simple application with TypeScript",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ysden123/ptypescript.git"
+	},
+	"author": "Yuriy Stul",
+	"license": "MIT",
+	"scripts": {
+		"start": "node dist/app.js",
+		"build-ts": "tsc"
+	}
+}
