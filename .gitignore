@@ -8,3 +8,5 @@ simpleapp/dist/
 *.iml
 
 simpleapp/package-lock.json
+
+interface-class/dist/

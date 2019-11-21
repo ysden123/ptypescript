@@ -1,0 +1,13 @@
+{
+  "name": "interface-class",
+  "version": "1.0.0",
+  "description": "Playing with interface and class",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/app.js",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yuriy Stul",
+  "license": "ISC"
+}
